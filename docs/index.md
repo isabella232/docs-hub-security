@@ -36,10 +36,6 @@ We rely on the FIWARE architecture and solution to implement those features in P
 * Wilma (PEP Proxy) : The OAuth2 proxy that check the access
 * AuthzForce : An XACML authorization solution
 
-
-<p align="center">
-<img src="img/security_architecture.png" alt="PIXEL Security Layer architecture" align="center" />
-</p>
 </div>
 
 ## (REST) API
@@ -51,6 +47,7 @@ Wilma and AuthZForce interact directly with KeyRock to ensure that the access to
  
 ### Paths
 The complete Identity Management API for KeyRock is [fully documented by FIWARE](https://fiware-idm.readthedocs.io/en/latest/) and allows managing all the objects of the Identity Management models:
+
 * Authentication.
 * Manage Applications.
 * Manage Users.
@@ -69,6 +66,7 @@ The full API models are implemented in the MySQL Database that helps to show the
 A complete database structure is available on [github](https://github.com/ging/fiware-idm/blob/master/doc/resources/database_structure.png).
 
 The main objects are:
+
 * User: It has credentials, and can be assigned to Organization and Application.
 * Organization: It represents a user’s group. It can be assigned to Application.
 * Application: We can assign one PEP Proxy to protect a backend. Users and Organizations have assigned Roles in the context of the application.
