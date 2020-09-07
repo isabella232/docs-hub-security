@@ -4,6 +4,7 @@
 
 The full installation process relies on docker-compose.
 The process of the installation is split in three different steps:
+
 * Configuration : You must adapt the docker-compose-*.yaml file and feed the different secrets value
 * Build : it is the docker-compose build process, a helper script ./build.sh is provided
 * Installation : it is the docker-compose up process, a helper script is provided
@@ -94,7 +95,8 @@ When you have deployed Keyrock and Authzforce, you can deploy as many Wilma that
 By default we use Wilma to protect the NGSI Agents that is configured as daemon, and we will also use it to protect the access to private API from the outside of the platform.
 
 <p align="center">
-<img src="img/security_wilma.png" alt="PIXEL Security Layer architecture" align="center" />
+<img src="https://github.com/pixel-ports/docs-hub-security/raw/master/docs/img/security_wilma.png" alt="PIXEL Security Layer architecture" align="center" />
+</p>
 
 To install other WILMA, you have to create the corresponding Application in KeyRock using the UI or the API
 
